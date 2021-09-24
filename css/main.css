@@ -1,0 +1,62 @@
+body {
+   background-image: url(../images/milky-way.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+}
+.pokemon-heading {
+   color: #fff;
+}
+.pokemon-list {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   column-gap: 10px;
+   row-gap: 25px;
+   background-color: #d9d9d9;
+   list-style: none;
+}
+.pokemon-list__item {
+   width: 30%;
+   background-color: #f3f3f3;
+}
+.pokemon-list__item:hover {
+   box-shadow:  -5px 5px 20px 5px red, 5px 5px 20px 5px blue;
+}
+.pokemon-list__img:hover {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pokemon-list__info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.pokemon-list__span {
+   margin-bottom: 5px;
+}
+@media only screen and (max-width: 992px) {
+   .pokemon-list__item {
+      width: 40%;
+     
+   }
+}
+@media only screen and (max-width: 768px) {
+   .pokemon-list__item {
+      width: 90%;
+   }
+   .pokemon-list__info {
+      flex-wrap: wrap;
+      height: 140px;
+
+   }
+}
+@media only screen and (max-width: 478px) {
+   .pokemon-list__item {
+      width: 90%;
+   }
+   .pokemon-list__info {
+      height: 256px;
+      align-items: center;
+   }
+}
